@@ -1,6 +1,5 @@
 #!/bin/python3
 
-# transposition cipher
 
 import math
 import random
@@ -9,8 +8,6 @@ import string
 
 def encrypt(message, key_length):
     rows = math.ceil(len(message) / key_length)
-    #    print("key length = ", key_length)
-    #    print("rows = ", rows)
 
     matrix = [[] for x in range(rows)]
 
@@ -39,8 +36,6 @@ def padding(message, key_length):
 
 def decrypt(message, key_length, pad):
     rows = math.ceil(len(message) / key_length)
-    #    print("key length = ", key_length)
-    #    print("rows = ", rows)
 
     matrix = [[] for x in range(key_length)]
 
@@ -60,11 +55,9 @@ def decrypt(message, key_length, pad):
 
 def main():
     message = "hellow how do you do? I am doing fine, thank you. What about you? I am also doing fine."
-    # input("input text : ")
     print('input = ', message)
 
-    key_length = 4  # int(input("key length? "))
-
+    key_length = 4
     cipher_text = encrypt(message, key_length)
     print("cipher text = ", cipher_text)
 
