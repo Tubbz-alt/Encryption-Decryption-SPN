@@ -5,18 +5,17 @@ import string
 import sympy as spy
 
 
-# s-box key
 def keygen(type, size):
     if type == "printable":
         return """""".join(random.sample(list(string.printable), size))
-    if type == "numbers":
-        return """""".join(random.sample(list(string.digits), size))
-    if type == "letters":
-        return """""".join(random.sample(list(string.ascii_letters), size))
-    if type == "oct":
-        return """""".join(random.sample(list(string.octdigits), size))
-    if type == "hex":
-        return """""".join(random.sample(list(string.hexdigits), size))
+    # if type == "numbers":
+    #    return """""".join(random.sample(list(string.digits), size))
+    # if type == "letters":
+    #    return """""".join(random.sample(list(string.ascii_letters), size))
+    # if type == "oct":
+    #    return """""".join(random.sample(list(string.octdigits), size))
+    # if type == "hex":
+    #    return """""".join(random.sample(list(string.hexdigits), size))
 
 
 def list_primes(n):
