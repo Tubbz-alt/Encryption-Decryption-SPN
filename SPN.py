@@ -6,7 +6,6 @@ import keygen
 
 
 def encrypt(plain_text, key, prime, stage):
-    # print(f"--- Beginning stage {stage} encryption ---")
     print("plain text = ", plain_text)
 
     # print("substage 1: pbox.encrypt")
